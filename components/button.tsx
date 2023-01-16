@@ -1,14 +1,15 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
-import { motion } from "framer-motion";
 import { useState } from "react";
+
+import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Button({ text, link }: { text: string; link: string }) {
   const [rotate, setRotate] = useState(0);
 
   return (
-    <div className="flex-1 m-5 border-t font-bold">
+    <div className="m-5 flex-1 border-t font-bold">
       <Link
         href={{
           pathname: link,
@@ -20,13 +21,13 @@ export default function Button({ text, link }: { text: string; link: string }) {
           onHoverStart={() => setRotate(45)}
           onHoverEnd={() => setRotate(0)}
           whileTap={{ scale: 0.99, y: 5 }}
-          className="flex justify-between items-center w-full p-3"
+          className="flex w-full items-center justify-between p-3"
         >
           <div>{text}</div>
           <motion.div animate={{ rotate }}>
             <FontAwesomeIcon
               icon={faAnglesRight}
-              className="text-blue-400 rotate-45"
+              className="rotate-45 text-blue-400"
             />
           </motion.div>
         </motion.button>

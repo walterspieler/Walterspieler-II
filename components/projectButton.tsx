@@ -1,10 +1,8 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAnglesRight,
-  faArrowUpRightFromSquare,
-} from "@fortawesome/free-solid-svg-icons";
-import { motion } from "framer-motion";
 import { useState } from "react";
+
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function ProjectButton({
@@ -38,13 +36,13 @@ export default function ProjectButton({
           setY(0);
         }}
         whileTap={{ scale: 0.99, y: 5 }}
-        className="w-full border-t p-3 font-bold grid grid-cols-3"
+        className="grid w-full grid-cols-3 border-t p-3 font-bold"
       >
-        <h2 className="font-bold text-left">{title}</h2>
+        <h2 className="text-left font-bold">{title}</h2>
         <div>{year}</div>
         <motion.div
           animate={{ x, y }}
-          className="flex justify-end items-center"
+          className="flex items-center justify-end"
         >
           <FontAwesomeIcon
             icon={faArrowUpRightFromSquare}

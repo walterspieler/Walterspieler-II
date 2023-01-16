@@ -1,6 +1,8 @@
-import Head from "next/head";
-import Button from "./button";
 import { FC, ReactNode } from "react";
+
+import Head from "next/head";
+
+import Button from "./button";
 
 const Layout: FC<{ children: ReactNode }> = ({ children }) => {
   return (
@@ -16,7 +18,7 @@ const Layout: FC<{ children: ReactNode }> = ({ children }) => {
           <Button text="Works" link="/works" />
         </div>
       </header>
-      <main className="max-w-xl md:max-w-5xl m-auto">{children}</main>
+      <main className="m-auto max-w-xl md:max-w-5xl">{children}</main>
     </div>
   );
 };

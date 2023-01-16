@@ -1,17 +1,19 @@
-import Layout from "../components/layout";
-import { getSortedPostsData } from "../lib/posts";
-import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCode,
   faTerminal,
   faWandMagicSparkles,
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
-import ExternalLink from "components/externalLink";
 import Head from "next/head";
+import Image from "next/image";
 
-export default function Home({}) {
+import ExternalLink from "components/externalLink";
+
+import Layout from "../components/layout";
+import { getSortedPostsData } from "../lib/posts";
+
+export default function Home() {
   return (
     <Layout>
       <Head>
@@ -27,23 +29,23 @@ export default function Home({}) {
             and esports tournament organizers."
         />
       </Head>
-      <div className="grid md:grid-cols-3 md:gap-14 mt-5 md:mb-20">
+      <div className="mt-5 grid md:mb-20 md:grid-cols-3 md:gap-14">
         <motion.section
           whileHover={{ rotate: 1, y: 5, scale: 1.05 }}
-          className="w-full relative min-h-[15rem] min-w-[15rem] mb-5"
+          className="relative mb-5 min-h-[15rem] w-full min-w-[15rem]"
         >
-          <div className="absolute top-5 left-5 w-full h-full bg-black"></div>
+          <div className="absolute top-5 left-5 h-full w-full bg-black"></div>
           <Image
             src={"/images/matt.jpg"}
             alt="Matt"
-            className="object-cover grayscale object-top min-h-full min-w-full"
+            className="min-h-full min-w-full object-cover object-top grayscale"
             fill
           />
         </motion.section>
         <section className="col-span-2 m-5">
-          <h1 className="text-[2rem] md:text-[3rem] lg:text-[4rem] xl:text-[5rem] leading-none mb-5 relative">
+          <h1 className="relative mb-5 text-[2rem] leading-none md:text-[3rem] lg:text-[4rem] xl:text-[5rem]">
             <span className="font-bold md:text-5xl">Matthieu</span> <br />
-            <span className="font-black z-10">WALTERSPIELER SALVI</span>
+            <span className="z-10 font-black">WALTERSPIELER SALVI</span>
           </h1>
           <p className="font-thin">
             Born in 1991 in France. I'm a fullstack developer based in Paris. I
@@ -51,10 +53,10 @@ export default function Home({}) {
             estate companies. I also worked for famous video games developers
             and esports tournament organizers.
           </p>
-          <p className="font-thin mt-1">
+          <p className="mt-1 font-thin">
             Some of my latest projects are available in the Works section.
           </p>
-          <div className="flex justify-start items-center flex-wrap">
+          <div className="flex flex-wrap items-center justify-start">
             <ExternalLink
               text={"Twitter"}
               link={"https://twitter.com/mwalterspieler"}
@@ -102,8 +104,8 @@ export default function Home({}) {
         </div>
         <div className="grid lg:grid-cols-3 lg:gap-14">
           <div className="mb-8">
-            <div className="border-b mb-5 flex justify-between items-center">
-              <h3 className="font-black text-xl mb-3">UI/UX Design</h3>
+            <div className="mb-5 flex items-center justify-between border-b">
+              <h3 className="mb-3 text-xl font-black">UI/UX Design</h3>
               <motion.div
                 animate={{ rotate: [-5, 10, -5] }}
                 transition={{ repeat: Infinity }}
@@ -121,20 +123,20 @@ export default function Home({}) {
               that are beneficial to users.
             </p>
             <div className="mt-5 grid grid-cols-2 gap-x-5">
-              <div className="rounded-full border text-center px-5 my-2">
+              <div className="my-2 rounded-full border px-5 text-center">
                 Figma
               </div>
-              <div className="rounded-full border text-center px-5 my-2">
+              <div className="my-2 rounded-full border px-5 text-center">
                 Photoshop
               </div>
-              <div className="rounded-full border text-center px-5 my-2">
+              <div className="my-2 rounded-full border px-5 text-center">
                 Illustrator
               </div>
             </div>
           </div>
           <div className="mb-8">
-            <div className="border-b mb-5 flex justify-between items-center">
-              <h3 className="font-black text-xl mb-3">Web development</h3>
+            <div className="mb-5 flex items-center justify-between border-b">
+              <h3 className="mb-3 text-xl font-black">Web development</h3>
               <motion.div
                 animate={{ scale: [1.1, 1, 1.1], rotate: [0, 5, 0] }}
                 transition={{ repeat: Infinity }}
@@ -149,29 +151,29 @@ export default function Home({}) {
               experiments and thoughts.
             </p>
             <div className="mt-5 grid grid-cols-2 gap-x-5">
-              <div className="rounded-full border text-center px-5 my-2">
+              <div className="my-2 rounded-full border px-5 text-center">
                 HTML/CSS
               </div>
-              <div className="rounded-full border text-center px-5 my-2">
+              <div className="my-2 rounded-full border px-5 text-center">
                 Typescript
               </div>
-              <div className="rounded-full border text-center px-5 my-2">
+              <div className="my-2 rounded-full border px-5 text-center">
                 React
               </div>
-              <div className="rounded-full border text-center px-5 my-2">
+              <div className="my-2 rounded-full border px-5 text-center">
                 Vue
               </div>
-              <div className="rounded-full border text-center px-5 my-2">
+              <div className="my-2 rounded-full border px-5 text-center">
                 Angular
               </div>
-              <div className="rounded-full border text-center px-5 my-2">
+              <div className="my-2 rounded-full border px-5 text-center">
                 Nestjs
               </div>
             </div>
           </div>
           <div className="mb-8">
-            <div className="border-b mb-5 flex justify-between items-center">
-              <h3 className="font-black text-xl mb-3">Cloud engineering</h3>
+            <div className="mb-5 flex items-center justify-between border-b">
+              <h3 className="mb-3 text-xl font-black">Cloud engineering</h3>
               <motion.div
                 animate={{ opacity: [1, 0.5, 1] }}
                 transition={{ repeat: Infinity, duration: 1.5, type: "tween" }}
@@ -184,16 +186,16 @@ export default function Home({}) {
               depending on its needs with the right architecture and sizing.
             </p>
             <div className="mt-5 grid grid-cols-2 gap-x-5">
-              <div className="rounded-full border text-center px-5 my-2">
+              <div className="my-2 rounded-full border px-5 text-center">
                 GCP
               </div>
-              <div className="rounded-full border text-center px-5 my-2">
+              <div className="my-2 rounded-full border px-5 text-center">
                 AWS
               </div>
-              <div className="rounded-full border text-center px-5 my-2">
+              <div className="my-2 rounded-full border px-5 text-center">
                 Azure
               </div>
-              <div className="rounded-full border text-center px-5 my-2">
+              <div className="my-2 rounded-full border px-5 text-center">
                 Vercel
               </div>
             </div>

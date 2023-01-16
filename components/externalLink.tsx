@@ -1,7 +1,8 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-import { motion } from "framer-motion";
 import { useState } from "react";
+
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function ExternalLink({
@@ -33,16 +34,16 @@ export default function ExternalLink({
             setY(0);
           }}
           whileTap={{ scale: 0.99, y: 5 }}
-          className="flex justify-start items-center w-full p-3"
+          className="flex w-full items-center justify-start p-3"
         >
           <div className="mr-1 font-thin">{text}</div>
           <motion.div
             animate={{ x, y }}
-            className="flex justify-end items-center"
+            className="flex items-center justify-end"
           >
             <FontAwesomeIcon
               icon={faArrowUp}
-              className="text-blue-400 rotate-45"
+              className="rotate-45 text-blue-400"
             />
           </motion.div>
         </motion.button>

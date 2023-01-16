@@ -1,8 +1,10 @@
-import Layout from "../components/layout";
-import ProjectButton from "components/projectButton";
 import Head from "next/head";
 
-export default function Works({}) {
+import ProjectButton from "components/projectButton";
+
+import Layout from "../components/layout";
+
+export default function Works() {
   return (
     <Layout>
       <Head>
@@ -16,13 +18,13 @@ export default function Works({}) {
           some of my latest projects."
         />
       </Head>
-      <div className="grid grid-cols-2 m-5">
+      <div className="m-5 grid grid-cols-2">
         <p className="mb-8 text-2xl font-bold">
           I love to craft functional solutions for unique problems. These are
           some of my latest projects.
         </p>
       </div>
-      <div className="grid gap-14 m-5">
+      <div className="m-5 grid gap-14">
         <ul>
           <li className="pb-5">
             <ProjectButton
