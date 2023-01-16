@@ -18,13 +18,13 @@ export default function Works() {
           some of my latest projects."
         />
       </Head>
-      <div className="m-5 grid grid-cols-2">
-        <p className="mb-8 text-2xl font-bold">
+      <div className="mb-20 mt-10 grid grid-cols-2">
+        <p className="text-2xl font-bold">
           I love to craft functional solutions for unique problems. These are
           some of my latest projects.
         </p>
       </div>
-      <div className="m-5 grid gap-14">
+      <div className="m-5 mb-0 grid gap-x-14">
         <ul>
           <li className="pb-5">
             <ProjectButton
@@ -47,7 +47,24 @@ export default function Works() {
               link={"https://redblue.fr/"}
             />
           </li>
+          <li className="pb-5">
+            <ProjectButton
+              title={"Blacksmith"}
+              year={"since 2019"}
+              link={"https://blacksmith.studio/"}
+            />
+          </li>
+          <li>
+            <ProjectButton
+              title={"Fundee by Turgot Asset Management"}
+              year={"2015-2019"}
+              link={"https://fundee.fr/"}
+            />
+          </li>
         </ul>
+        <p className="mt-5 text-sm text-gray-400">
+          Note: The list is not intended to be exhaustive.
+        </p>
       </div>
     </Layout>
   );

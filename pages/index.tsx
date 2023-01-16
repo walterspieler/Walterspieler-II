@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 import ExternalLink from "components/externalLink";
 
@@ -48,15 +49,28 @@ export default function Home() {
             <span className="z-10 font-black">WALTERSPIELER SALVI</span>
           </h1>
           <p className="font-thin">
-            Born in 1991 in France. I'm a fullstack developer based in Paris. I
-            have developed platforms and website mainly for financial and real
-            estate companies. I also worked for famous video games developers
-            and esports tournament organizers.
+            Born in 1991 in France, working as web developer since 2013. I'm a
+            fullstack developer based in Paris. I have developed several
+            platforms and websites mainly for financial and real estate
+            companies. I also worked for famous video games developers and
+            esports tournament organizers.
           </p>
-          <p className="mt-1 font-thin">
-            Some of my latest projects are available in the Works section.
+          <p className="mt-1 flex font-thin">
+            <div className="mr-1">
+              Some of my latest projects are available in the{" "}
+            </div>
+            <motion.div whileHover={{ scale: 1.01, y: 2 }}>
+              <Link
+                href={{
+                  pathname: "/works",
+                }}
+                className="font-bold text-blue-500 underline underline-offset-4"
+              >
+                Works section.
+              </Link>
+            </motion.div>
           </p>
-          <div className="flex flex-wrap items-center justify-start">
+          <div className="mt-5 flex flex-wrap items-center justify-start border-t">
             <ExternalLink
               text={"Twitter"}
               link={"https://twitter.com/mwalterspieler"}

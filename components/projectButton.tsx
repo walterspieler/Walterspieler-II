@@ -11,7 +11,7 @@ export default function ProjectButton({
   link,
 }: {
   title: string;
-  year: number;
+  year: number | string;
   link: string;
 }) {
   const [x, setX] = useState(0);
