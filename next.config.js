@@ -1,8 +1,8 @@
-
 /** @type {import('next').NextConfig} */
 
-const { i18n } = require('./next-i18next.config')
-const isProd = process.env.NODE_ENV === 'production'
+const { i18n } = require('./next-i18next.config');
+
+const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   reactStrictMode: true,
@@ -13,6 +13,6 @@ const nextConfig = {
     unoptimized: true,
   },
   assetPrefix: isProd ? '/Walterspieler-II/' : '',
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
