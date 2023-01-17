@@ -19,7 +19,7 @@ export default function Works() {
         />
       </Head>
       <div className="mb-20 mt-10 grid grid-cols-2">
-        <p className="text-2xl font-bold">
+        <p className="mx-20 text-2xl font-bold">
           I love to craft functional solutions for unique problems. These are
           some of my latest projects.
         </p>
