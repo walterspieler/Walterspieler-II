@@ -18,6 +18,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
+        <title>Fullstack Developer | Matthieu Walterspieler</title>
         <meta
           name="title"
           content="Fullstack Developer | Matthieu Walterspieler"
@@ -56,19 +57,19 @@ export default function Home() {
             esports tournament organizers.
           </p>
           <p className="mt-1 flex font-thin">
-            <div className="mr-1">
+            <span className="mr-1 block">
               Some of my latest projects are available in the{" "}
-            </div>
-            <motion.div whileHover={{ scale: 1.01, y: 2 }}>
+            </span>
+            <motion.span whileHover={{ scale: 1.01, y: 2 }}>
               <Link
                 href={{
                   pathname: "/works",
                 }}
-                className="font-bold text-blue-500 underline underline-offset-4"
+                className="font-bold text-blue-600 underline underline-offset-4"
               >
                 Works section.
               </Link>
-            </motion.div>
+            </motion.span>
           </p>
           <div className="mt-5 flex flex-wrap items-center justify-start border-t">
             <ExternalLink
@@ -119,7 +120,7 @@ export default function Home() {
         <div className="grid lg:grid-cols-3 lg:gap-14">
           <div className="mb-8">
             <div className="mb-5 flex items-center justify-between border-b">
-              <h3 className="mb-3 text-xl font-black">UI/UX Design</h3>
+              <h2 className="mb-3 text-xl font-black">UI/UX Design</h2>
               <motion.div
                 animate={{ rotate: [-5, 10, -5] }}
                 transition={{ repeat: Infinity }}
@@ -150,7 +151,7 @@ export default function Home() {
           </div>
           <div className="mb-8">
             <div className="mb-5 flex items-center justify-between border-b">
-              <h3 className="mb-3 text-xl font-black">Web development</h3>
+              <h2 className="mb-3 text-xl font-black">Web development</h2>
               <motion.div
                 animate={{ scale: [1.1, 1, 1.1], rotate: [0, 5, 0] }}
                 transition={{ repeat: Infinity }}
@@ -187,7 +188,7 @@ export default function Home() {
           </div>
           <div className="mb-8">
             <div className="mb-5 flex items-center justify-between border-b">
-              <h3 className="mb-3 text-xl font-black">Cloud engineering</h3>
+              <h2 className="mb-3 text-xl font-black">Cloud engineering</h2>
               <motion.div
                 animate={{ opacity: [1, 0.5, 1] }}
                 transition={{ repeat: Infinity, duration: 1.5, type: "tween" }}

@@ -10,8 +10,9 @@ export default function Works() {
       <Head>
         <meta
           name="title"
-          content="Work from a Fullstack Developer | Matthieu Walterspieler"
+          content="Works from a Fullstack Developer | Matthieu Walterspieler"
         />
+        <title>Works from a Fullstack Developer | Matthieu Walterspieler</title>
         <meta
           name="description"
           content="I love to craft functional solutions for unique problems. These are
