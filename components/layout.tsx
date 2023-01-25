@@ -1,10 +1,19 @@
 import { FC, ReactNode } from "react";
 
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 import Head from "next/head";
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 
 import Button from "./button";
 
 const Layout: FC<{ children: ReactNode }> = ({ children }) => {
+  const { t } = useTranslation();
+  const router = useRouter();
+  const { pathname, asPath, query, locale } = router;
+
   return (
     <div>
       <Head>
@@ -37,8 +46,40 @@ const Layout: FC<{ children: ReactNode }> = ({ children }) => {
       </Head>
       <header>
         <div className="flex w-full">
-          <Button text="Profile" link="/" />
-          <Button text="Works" link="/works" />
+          <Button text={t("GLOBAL.MENU.PROFILE")} link="/" />
+          <Button text={t("GLOBAL.MENU.WORKS")} link="/works" />
+          <div className="m-5 border-t font-bold">
+            <motion.button
+              initial={{ scale: 1, y: 0 }}
+              whileHover={{ scale: 1.01, y: 5 }}
+              // onHoverStart={() => setRotate(45)}
+              // onHoverEnd={() => setRotate(0)}
+              onClick={() =>
+                router.push({ pathname, query }, asPath, {
+                  locale: locale === "en" ? "fr" : "en",
+                })
+              }
+              whileTap={{ scale: 0.99, y: 5 }}
+              className="flex items-center justify-between p-3"
+            >
+              <div>
+                <span
+                  className={locale === "en" ? "text-black" : "text-gray-400"}
+                >
+                  en
+                </span>
+                /
+                <span
+                  className={locale === "fr" ? "text-black" : "text-gray-400"}
+                >
+                  fr
+                </span>
+              </div>
+              <motion.div className="ml-5">
+                <FontAwesomeIcon icon={faGlobe} className="text-blue-400" />
+              </motion.div>
+            </motion.button>
+          </div>
         </div>
       </header>
       <main className="m-auto max-w-xl md:max-w-5xl">{children}</main>

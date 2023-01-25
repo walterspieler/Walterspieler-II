@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import ExternalLink from "components/externalLink";
 
@@ -15,21 +17,17 @@ import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <Layout>
       <Head>
-        <title>Fullstack Developer | Matthieu Walterspieler</title>
+        <title>Senior Fullstack Developer | Matthieu Walterspieler</title>
         <meta
           name="title"
-          content="Fullstack Developer | Matthieu Walterspieler"
+          content="Senior Fullstack Developer | Matthieu Walterspieler"
         />
-        <meta
-          name="description"
-          content="Born in 1991 in France. I'm a fullstack developer based in Paris. I
-            have developed platforms and website mainly for financial and real
-            estate companies. I also worked for famous video games developers
-            and esports tournament organizers."
-        />
+        <meta name="description" content={t("GLOBAL.INTRO") || ""} />
       </Head>
       <div className="mt-5 grid md:mb-20 md:grid-cols-3 md:gap-14">
         <motion.section
@@ -49,17 +47,9 @@ export default function Home() {
             <span className="font-bold md:text-5xl">Matthieu</span> <br />
             <span className="z-10 font-black">WALTERSPIELER SALVI</span>
           </h1>
-          <p className="font-thin">
-            Born in 1991 in France, working as web developer since 2013. I'm a
-            fullstack developer based in Paris. I have developed several
-            platforms and websites mainly for financial and real estate
-            companies. I also worked for famous video games developers and
-            esports tournament organizers.
-          </p>
+          <p className="font-thin">{t("GLOBAL.INTRO")}</p>
           <p className="mt-1 flex font-thin">
-            <span className="mr-1 block">
-              Some of my latest projects are available in the{" "}
-            </span>
+            <span className="mr-1 block">{t("GLOBAL.INTRO.P2")}</span>
             <motion.span whileHover={{ scale: 1.01, y: 2 }}>
               <Link
                 href={{
@@ -67,7 +57,7 @@ export default function Home() {
                 }}
                 className="font-bold text-blue-600 underline underline-offset-4"
               >
-                Works section.
+                {t("GLOBAL.INTRO.LINK")}
               </Link>
             </motion.span>
           </p>
@@ -112,10 +102,7 @@ export default function Home() {
       </div>
       <div className="mx-5 lg:mx-24">
         <div className="grid grid-cols-2">
-          <p className="mb-8 text-2xl font-bold">
-            I love to craft functional solutions for unique problems. These are
-            some skills I've picked up over my career.
-          </p>
+          <p className="mb-8 text-2xl font-bold">{t("GLOBAL.SKILLS.INTRO")}</p>
         </div>
         <div className="grid lg:grid-cols-3 lg:gap-14">
           <div className="mb-8">
@@ -131,12 +118,7 @@ export default function Home() {
                 />
               </motion.div>
             </div>
-            <p className="font-thin">
-              I always strive to design memorable experiences that are
-              aesthetically appealing, functional and intuitive. Whether it's
-              inspiring marketing websites, convincing e-commerce sites or apps
-              that are beneficial to users.
-            </p>
+            <p className="font-thin">{t("GLOBAL.SKILLS.UI")}</p>
             <div className="mt-5 grid grid-cols-2 gap-x-5">
               <div className="my-2 rounded-full border px-5 text-center">
                 Figma
@@ -159,12 +141,7 @@ export default function Home() {
                 <FontAwesomeIcon icon={faCode} className="text-blue-400" />
               </motion.div>
             </div>
-            <p className="font-thin">
-              I believe fullstack web development can be more diverse and
-              inspiring. With a mission to present the possibilities of web
-              design, I am pursuing new ways and solutions iterating through
-              experiments and thoughts.
-            </p>
+            <p className="font-thin">{t("GLOBAL.SKILLS.DEV")}</p>
             <div className="mt-5 grid grid-cols-2 gap-x-5">
               <div className="my-2 rounded-full border px-5 text-center">
                 HTML/CSS
@@ -196,10 +173,7 @@ export default function Home() {
                 <FontAwesomeIcon icon={faTerminal} className="text-blue-400" />
               </motion.div>
             </div>
-            <p className="font-thin">
-              I'm convinced that a successful project is a project deployed
-              depending on its needs with the right architecture and sizing.
-            </p>
+            <p className="font-thin">{t("GLOBAL.SKILLS.DEVOPS")}</p>
             <div className="mt-5 grid grid-cols-2 gap-x-5">
               <div className="my-2 rounded-full border px-5 text-center">
                 GCP
@@ -221,11 +195,12 @@ export default function Home() {
   );
 }
 
-export async function getStaticProps() {
+export const getStaticProps = async ({ locale }: { locale: any }) => {
   const allPostsData = getSortedPostsData();
   return {
     props: {
+      ...(await serverSideTranslations(locale, ["common"])),
       allPostsData,
     },
   };
-}
+};

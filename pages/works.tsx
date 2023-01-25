@@ -1,29 +1,22 @@
 import Head from "next/head";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import ProjectButton from "components/projectButton";
 
 import Layout from "../components/layout";
 
 export default function Works() {
+  const { t: tw } = useTranslation("works");
   return (
     <Layout>
       <Head>
-        <meta
-          name="title"
-          content="Works from a Fullstack Developer | Matthieu Walterspieler"
-        />
-        <title>Works from a Fullstack Developer | Matthieu Walterspieler</title>
-        <meta
-          name="description"
-          content="I love to craft functional solutions for unique problems. These are
-          some of my latest projects."
-        />
+        <meta name="title" content={tw("WORKS.TITLE") || ""} />
+        <title>{tw("WORKS.TITLE")}</title>
+        <meta name="description" content={tw("WORKS.INTRO") || ""} />
       </Head>
       <div className="mb-20 mt-10 grid grid-cols-2">
-        <p className="mx-20 text-2xl font-bold">
-          I love to craft functional solutions for unique problems. These are
-          some of my latest projects.
-        </p>
+        <p className="mx-20 text-2xl font-bold">{tw("WORKS.INTRO")}</p>
       </div>
       <div className="m-5 mb-0 grid gap-x-14">
         <ul>
@@ -63,10 +56,16 @@ export default function Works() {
             />
           </li>
         </ul>
-        <p className="mt-5 text-sm text-gray-400">
-          Note: The list is not intended to be exhaustive.
-        </p>
+        <p className="mt-5 text-sm text-gray-400">{tw("WORKS.NOTE")}</p>
       </div>
     </Layout>
   );
 }
+
+export const getStaticProps = async ({ locale }: { locale: any }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "works"])),
+    },
+  };
+};

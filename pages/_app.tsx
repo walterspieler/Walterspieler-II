@@ -2,9 +2,12 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { AppProps } from "next/app";
 import "../styles/global.css";
+import { appWithTranslation } from "next-i18next";
 
 config.autoAddCss = false;
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
+const MyApp = ({ Component, pageProps }: AppProps) => (
+  <Component {...pageProps} />
+);
+
+export default appWithTranslation(MyApp);
