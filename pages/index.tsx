@@ -48,8 +48,8 @@ export default function Home() {
             <span className="z-10 font-black">WALTERSPIELER SALVI</span>
           </h1>
           <p className="font-thin">{t("GLOBAL.INTRO")}</p>
-          <p className="mt-1 flex font-thin">
-            <span className="mr-1 block">{t("GLOBAL.INTRO.P2")}</span>
+          <p className="mt-1 font-thin">
+            <span className="mr-1">{t("GLOBAL.INTRO.P2")}</span>
             <motion.span whileHover={{ scale: 1.01, y: 2 }}>
               <Link
                 href={{

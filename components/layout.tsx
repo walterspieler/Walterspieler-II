@@ -48,7 +48,7 @@ const Layout: FC<{ children: ReactNode }> = ({ children }) => {
         <div className="flex w-full">
           <Button text={t("GLOBAL.MENU.PROFILE")} link="/" />
           <Button text={t("GLOBAL.MENU.WORKS")} link="/works" />
-          <div className="m-5 border-t font-bold">
+          <div className="m-2 border-t font-bold md:m-5">
             <motion.button
               initial={{ scale: 1, y: 0 }}
               whileHover={{ scale: 1.01, y: 5 }}
@@ -62,7 +62,7 @@ const Layout: FC<{ children: ReactNode }> = ({ children }) => {
               whileTap={{ scale: 0.99, y: 5 }}
               className="flex items-center justify-between p-3"
             >
-              <div>
+              <div className="hidden md:block">
                 <span
                   className={locale === "en" ? "text-black" : "text-gray-400"}
                 >
@@ -75,7 +75,7 @@ const Layout: FC<{ children: ReactNode }> = ({ children }) => {
                   fr
                 </span>
               </div>
-              <motion.div className="ml-5">
+              <motion.div className="md:ml-5">
                 <FontAwesomeIcon icon={faGlobe} className="text-blue-400" />
               </motion.div>
             </motion.button>
