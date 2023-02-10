@@ -1,7 +1,8 @@
 {
     "conventionalCommits.scopes": [
         "Global",
-        "Content"
+        "Content",
+        "Misc"
     ],
     "yaml.schemas": {
         "https://json.schemastore.org/github-workflow.json": "file:///Users/matthieuwalterspieler/Projects/walterspieler.com/.github/workflows/deploy.yml"

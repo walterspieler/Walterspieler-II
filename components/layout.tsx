@@ -52,13 +52,12 @@ const Layout: FC<{ children: ReactNode }> = ({ children }) => {
             <motion.button
               initial={{ scale: 1, y: 0 }}
               whileHover={{ scale: 1.01, y: 5 }}
-              // onHoverStart={() => setRotate(45)}
-              // onHoverEnd={() => setRotate(0)}
               onClick={() =>
                 router.push({ pathname, query }, asPath, {
                   locale: locale === "en" ? "fr" : "en",
                 })
               }
+              title="EN/FR"
               whileTap={{ scale: 0.99, y: 5 }}
               className="flex items-center justify-between p-3"
             >

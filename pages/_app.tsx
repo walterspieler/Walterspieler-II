@@ -9,7 +9,7 @@ config.autoAddCss = false;
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
-    <GoogleAnalytics trackPageViews />
+    <GoogleAnalytics trackPageViews strategy="afterInteractive" />
     <Component {...pageProps} />
   </>
 );

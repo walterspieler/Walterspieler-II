@@ -11,8 +11,7 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import ExternalLink from "components/externalLink";
-
+import ExternalLink from "../components/externalLink";
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
 
