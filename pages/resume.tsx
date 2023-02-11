@@ -233,8 +233,8 @@ export default function Home() {
               <h3 className="text-xl font-bold">VINGTROIS</h3>
               <h4 className="">Fullstack Developer</h4>
               <p className="mb-3 text-sm text-gray-500 print:mb-1">
-                Paris, Île-de-France, France • janvier 2015 - janvier 2019 (4
-                ans 1 mois)
+                Paris, Île-de-France, France • juin 2014 - juin 2015 (1 ans 1
+                mois)
               </p>
               <p className="text-xs font-thin">
                 J'ai acquis de l'expérience en développement à la fois front-end
