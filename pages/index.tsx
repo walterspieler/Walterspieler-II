@@ -96,6 +96,10 @@ export default function Home() {
               text={"Pluralsight"}
               link={"https://app.pluralsight.com/profile/matt-walterspieler"}
             />
+            <ExternalLink
+              text={"My resume"}
+              link={"https://walterspieler.com/resume"}
+            />
           </div>
         </section>
       </div>
