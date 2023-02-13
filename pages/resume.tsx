@@ -22,8 +22,8 @@ export default function Home() {
         />
         <meta name="description" content={t("GLOBAL.INTRO") || ""} />
       </Head>
-      <div className="m-auto grid max-w-[1192px] grid-cols-4 gap-3 bg-white  p-8 shadow-xl print:p-0 print:shadow-none">
-        <motion.section className="relative mb-5 aspect-square h-[12rem]">
+      <div className="m-auto grid max-w-[1200px] grid-cols-5 gap-1 bg-white p-8 shadow-xl print:p-0 print:shadow-none">
+        <motion.section className="relative mb-5 aspect-square h-[10rem] w-[10rem]">
           <div className="relative top-5 left-5 h-full w-full bg-black"></div>
           <Image
             src={"/images/mattCV.jpg"}
@@ -117,7 +117,7 @@ export default function Home() {
             </div>
           </section>
         </motion.section>
-        <section className="col-span-3 my-5">
+        <section className="col-span-4 my-3">
           <h1 className="relative text-[3rem] leading-none">
             <span className="text-5xl font-bold">Matthieu </span>
             <span className="z-10 font-black">WALTERSPIELER</span>
@@ -139,15 +139,18 @@ export default function Home() {
               </Link>
             </motion.span>
           </p>
-          <section className="mt-3 pt-3">
+          <section className="pt-3">
             <h2 className="text-2xl font-black">Expérience</h2>
             <div className="mt-3">
               <h3 className="text-xl font-bold">Blacksmith</h3>
-              <h4 className="">Chief Technology Officer</h4>
-              <p className="mb-3 text-sm text-gray-500 print:mb-1">
-                Paris, Île-de-France, France • décembre 2019 - Present (3 ans 2
-                mois)
-              </p>
+              <div className="flex items-center">
+                <h4 className="mr-1">Chief Technology Officer • </h4>
+                <p className="text-sm text-gray-500">
+                  {" "}
+                  Paris, Île-de-France, France • décembre 2019 - Present (3 ans
+                  2 mois)
+                </p>
+              </div>
               <p className="mb-2 text-xs font-thin">
                 J'ai commencé comme Lead Developer et suis devenu rapidement
                 CTO. J'ai dirigé plusieurs projets majeurs pour des clients tels
@@ -161,14 +164,45 @@ export default function Home() {
                 exceptionnels pour nos clients en apportant mon expertise
                 technique.
               </p>
+              <div className="flex">
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Nestjs
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Redis
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Next.js
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  NodeJS
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Typescript
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  AWS
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  React Native
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Socket.IO
+                </div>
+              </div>
             </div>
 
             <div className="mt-5 border-t pt-5">
               <h3 className="text-xl font-bold">Thematics Asset Management</h3>
-              <h4 className="">Fullstack Lead Developer - Mission Freelance</h4>
-              <p className="mb-3 text-sm text-gray-500 print:mb-1">
-                Paris, Île-de-France, France • juin 2022 - octobre 2022 (5 mois)
-              </p>
+              <div className="flex items-center">
+                <h4 className="mr-1">
+                  Fullstack Lead Developer - Mission Freelance •
+                </h4>
+                <p className="text-sm text-gray-500">
+                  Paris, Île-de-France, France • juin 2022 - octobre 2022 (5
+                  mois)
+                </p>
+              </div>
               <p className="mb-2 text-xs font-thin">
                 En tant que développeur, j'ai mené à bien une mission de grande
                 envergure pour Thematics AM, une filiale de Natixis, en
@@ -180,13 +214,41 @@ export default function Home() {
                 était d'optimiser le site pour les moteurs de recherche et
                 d'offrir une expérience utilisateur de qualité.
               </p>
+              <div className="flex">
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Next.js
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Strapi
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Vercel
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Figma
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Typescript
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Node.js
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Azure
+                </div>
+              </div>
             </div>
             <div className="mt-5 border-t pt-5">
               <h3 className="text-xl font-bold">REDBLUE</h3>
-              <h4 className="">Fullstack Lead Developer - Mission Freelance</h4>
-              <p className="mb-3 text-sm text-gray-500 print:mb-1">
-                Paris, Île-de-France, France • février 2022 - mai 2022 (4 mois)
-              </p>
+              <div className="flex items-center">
+                <h4 className="mr-1">
+                  Fullstack Lead Developer - Mission Freelance •
+                </h4>
+                <p className="text-sm text-gray-500 print:mb-1">
+                  Paris, Île-de-France, France • février 2022 - mai 2022 (4
+                  mois)
+                </p>
+              </div>
               <p className="mb-2 text-xs font-thin">
                 En tant que responsable de la refonte du site internet de
                 RedBlue, j'ai apporté une solution complète comprenant une
@@ -197,19 +259,48 @@ export default function Home() {
                 et enfin la mise en place d'un CMS headless Strapi pour une
                 gestion efficace des contenus.
               </p>
+              <div className="flex">
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Next.js
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Strapi
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Vercel
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Figma
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Typescript
+                </div>
+              </div>
             </div>
             <div className="mt-5 border-t pt-5">
               <h3 className="text-xl font-bold">Turgot Asset Management</h3>
-              <h4 className="">Fullstack Lead Developer | CTO</h4>
-              <p className="mb-3 text-sm text-gray-500 print:mb-1">
-                Paris, Île-de-France, France • janvier 2015 - janvier 2019 (4
-                ans 1 mois)
-              </p>
+              <div className="flex items-center">
+                <h4 className="mr-1">Fullstack Lead Developer | CTO • </h4>
+                <p className="text-sm text-gray-500 print:mb-1">
+                  Paris, Île-de-France, France • janvier 2015 - janvier 2020 (5
+                  ans 1 mois)
+                </p>
+              </div>
               <p className="text-xs font-thin">
-                Leader technique sur la mise en place de l'outil d'optimisation
-                de revenu en fonction du risque SRRI.
+                En tant que leader technique, j'ai dirigé la conception et le
+                développement de l'outil d'optimisation de revenu en fonction du
+                risque SRRI en utilisant des technologies modernes telles que
+                NestJS, un framework Node.js pour la création de microservices,
+                Angular pour l'interface utilisateur, et Google Cloud Platform
+                pour l'hébergement et le déploiement. Nous avons conçu une
+                architecture de microservices évolutifs pour garantir la
+                flexibilité et la fiabilité du système, tout en exploitant les
+                fonctionnalités de sécurité de Google Cloud Platform pour
+                protéger les données sensibles de nos clients. Le développement
+                a été mené en suivant les pratiques de développement Agile pour
+                assurer la qualité du code et la rapidité de livraison.
               </p>
-              <ul className="mt-3 list-disc pl-5 text-xs font-thin">
+              <ul className="my-3 list-disc pl-5 text-xs font-thin">
                 <li>Architecture d'APIs (REST et GraphQL) en microservices.</li>
                 <li>Consommation d'API via les différentes webapp</li>
                 <li>
@@ -228,42 +319,103 @@ export default function Home() {
                   Kubernetes sur Google Cloud Platform
                 </li>
               </ul>
+              <div className="flex">
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Nestjs
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Google PUB/SUB MQTT
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Angular
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  NodeJS
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Typescript
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  MongoDB
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  GCP
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Kubernetes
+                </div>
+              </div>
             </div>
             <div className="mt-5 border-t pt-5">
               <h3 className="text-xl font-bold">VINGTROIS</h3>
-              <h4 className="">Fullstack Developer</h4>
-              <p className="mb-3 text-sm text-gray-500 print:mb-1">
-                Paris, Île-de-France, France • juin 2014 - juin 2015 (1 ans 1
-                mois)
-              </p>
-              <p className="text-xs font-thin">
+              <div className="flex items-center">
+                <h4 className="mr-1">Fullstack Developer • </h4>
+                <p className="text-sm text-gray-500 print:mb-1">
+                  Paris, Île-de-France, France • juin 2014 - juin 2015 (1 ans 1
+                  mois)
+                </p>
+              </div>
+              <p className="mb-3 text-xs font-thin">
                 J'ai acquis de l'expérience en développement à la fois front-end
                 et back-end, en utilisant des outils et langages tels que
-                HTML5/CSS3 (y compris Sass), JavaScript (y compris Ecmascript
-                2015, AngularJS et Angular), SQL/NOSQL (en particulier
-                PostgreSQL et MongoDB), Node.js (avec Express et Nestjs) et
-                divers outils de construction et gestionnaires de paquets (tels
-                que Webpack, Grunt, Gulp, Browserify, NPM et Yarn). De plus,
-                j'ai mis en place de la conteneurisation et du déploiement, en
-                particulier avec Docker et Kubernets, et j'ai déployé des
-                applications sur Google Cloud Platform (GCP) en utilisant GKE.
+                HTML5/CSS3 et Sass, JavaScript (y compris Ecmascript 2015,
+                AngularJS), SQL/NOSQL (en particulier PostgreSQL et MongoDB),
+                Node.js (avec Express et Nestjs) et divers outils de
+                construction et gestionnaires de paquets (tels que Webpack,
+                Grunt, Gulp, Browserify, NPM et Yarn). De plus, j'ai mis en
+                place de la conteneurisation et du déploiement, en particulier
+                avec Docker et Kubernetes, et j'ai déployé des applications sur
+                Google Cloud Platform (GCP) en utilisant GKE.
               </p>
+              <div className="flex">
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Express
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Sass
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  AngularJS
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  NodeJS
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Typescript
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  GCP
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Docker
+                </div>
+              </div>
             </div>
             <div className="mt-5 border-t pt-5">
               <h3 className="text-xl font-bold">Swap Service</h3>
-              <h4 className="">Fullstack Developer</h4>
-              <p className="mb-3 text-sm text-gray-500 print:mb-1">
-                Région de Nancy, France • avril 2013 - juin 2014 (1 an et 3
-                mois)
-              </p>
-              <p className="text-xs font-thin">
+              <div className="flex items-center">
+                <h4 className="mr-1">Fullstack Developer / Designer • </h4>
+                <p className="text-sm text-gray-500 print:mb-1">
+                  Région de Nancy, France • avril 2013 - juin 2014 (1 an et 3
+                  mois)
+                </p>
+              </div>
+              <p className="mb-3 text-xs font-thin">
                 Conception de la charte graphique de l'identité d'entreprise,
                 des modèles de logiciels (UX, UI), développement front-end
                 (HTML5/CSS, JavaScript, PHP).
               </p>
+              <div className="flex">
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Adobe Suite
+                </div>
+                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                  Wordpress
+                </div>
+              </div>
             </div>
           </section>
-          <section className="mt-5 pt-5">
+          <section className="pt-5">
             <h2 className="text-2xl font-black">Formation</h2>
             <div className="mt-3">
               <h3 className="font-bold">
