@@ -35,7 +35,7 @@ export default function Home() {
             <h2 className="text-xl font-bold">Coordonnées</h2>
             <div className="mt-2">
               <h3 className="text-xs text-gray-400">
-                17 Avenue du Maréchal Juin <br /> 93260 Les Lilas FRANCE
+                12 rue des Pénitentes <br /> 59800 Lille FRANCE
               </h3>
             </div>
             <div className="mt-2 pt-2">

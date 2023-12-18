@@ -12,17 +12,17 @@ export default function ProjectButton({
 }: {
   title: string;
   year: number | string;
-  link: string;
+  link?: string;
 }) {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
 
-  return (
+  return link ? (
     <Link
       href={{
-        pathname: link,
+        pathname: link || "#",
       }}
-      target="_blank"
+      target={link && "_blank"}
     >
       <motion.button
         initial={{ scale: 1, y: 0 }}
@@ -40,16 +40,36 @@ export default function ProjectButton({
       >
         <h2 className="text-left font-bold">{title}</h2>
         <div>{year}</div>
-        <motion.div
-          animate={{ x, y }}
-          className="flex items-center justify-end"
-        >
-          <FontAwesomeIcon
-            icon={faArrowUpRightFromSquare}
-            className="text-blue-400"
-          />
-        </motion.div>
+        {link && (
+          <motion.div
+            animate={{ x, y }}
+            className="flex items-center justify-end"
+          >
+            <FontAwesomeIcon
+              icon={faArrowUpRightFromSquare}
+              className="text-blue-400"
+            />
+          </motion.div>
+        )}
       </motion.button>
     </Link>
+  ) : (
+    <motion.button
+      initial={{ scale: 1, y: 0 }}
+      whileHover={{ y: 1 }}
+      onHoverStart={() => {
+        setX(1);
+        setY(-1);
+      }}
+      onHoverEnd={() => {
+        setX(0);
+        setY(0);
+      }}
+      whileTap={{ scale: 1, y: 1 }}
+      className="grid w-full grid-cols-3 border-t p-3 font-bold"
+    >
+      <h2 className="text-left font-bold">{title}</h2>
+      <div>{year}</div>
+    </motion.button>
   );
 }

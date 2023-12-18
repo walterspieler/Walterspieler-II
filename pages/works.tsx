@@ -22,16 +22,26 @@ export default function Works() {
         <ul>
           <li className="pb-5">
             <ProjectButton
-              title={"My Lol Marks - Riot Games"}
-              year={2022}
-              link={"https://www.mylolmarks.com/"}
+              title={"Etxea Capital - Plateforme de gestion des biens / fonds"}
+              year={2023}
+              link={"https://www.etxeacapital.fr/"}
             />
+          </li>
+          <li className="pb-5">
+            <ProjectButton
+              title={"Etxea Capital - Vitrine"}
+              year={2023}
+              link={"https://www.etxeacapital.fr/"}
+            />
+          </li>
+          <li className="pb-5">
+            <ProjectButton title={"My Lol Marks - Riot Games"} year={2022} />
           </li>
           <li className="pb-5">
             <ProjectButton
               title={"Thematics Asset Management"}
               year={2022}
-              link={"https://thematics-am.fr/"}
+              link={"https://thematics-am.com/"}
             />
           </li>
           <li className="pb-5">
