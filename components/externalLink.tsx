@@ -43,7 +43,7 @@ export default function ExternalLink({
           >
             <FontAwesomeIcon
               icon={faArrowUp}
-              className="rotate-45 text-blue-400"
+              className="rotate-45 text-matt-green"
             />
           </motion.div>
         </motion.button>

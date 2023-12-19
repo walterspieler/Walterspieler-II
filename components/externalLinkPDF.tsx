@@ -39,7 +39,7 @@ export default function ExternalLinkPDF({
           <div className="mr-1 text-left text-xs font-thin">
             <FontAwesomeIcon
               icon={faArrowUp}
-              className="rotate-45 text-blue-400"
+              className="rotate-45 text-matt-green"
             />{" "}
             <span className="font-bold">{text}</span>
             <div className="">{link}</div>

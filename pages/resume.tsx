@@ -133,7 +133,7 @@ export default function Home() {
                 href={{
                   pathname: "/works",
                 }}
-                className="font-bold text-blue-600 underline underline-offset-4"
+                className="font-bold text-matt-green underline underline-offset-4"
               >
                 https://walterspieler.com/works
               </Link>

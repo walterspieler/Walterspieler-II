@@ -31,13 +31,13 @@ export default function Home() {
       <div className="mt-5 grid md:mb-20 md:grid-cols-3 md:gap-14">
         <motion.section
           whileHover={{ rotate: 1, y: 5, scale: 1.05 }}
-          className="relative mb-5 min-h-[15rem] w-full min-w-[15rem]"
+          className="relative mb-5 max-h-[20rem] w-full min-w-[15rem]"
         >
           <div className="absolute top-5 left-5 h-full w-full bg-black"></div>
           <Image
-            src={"/images/matt.jpg"}
+            src={"/images/matt_low.jpg"}
             alt="Matt"
-            className="min-h-full min-w-full object-cover object-top grayscale"
+            className="min-h-full min-w-full object-cover object-top"
             fill
           />
         </motion.section>
@@ -54,7 +54,7 @@ export default function Home() {
                 href={{
                   pathname: "/works",
                 }}
-                className="font-bold text-blue-600 underline underline-offset-4"
+                className="font-bold text-matt-orange underline underline-offset-4"
               >
                 {t("GLOBAL.INTRO.LINK")}
               </Link>
@@ -117,7 +117,7 @@ export default function Home() {
               >
                 <FontAwesomeIcon
                   icon={faWandMagicSparkles}
-                  className="text-blue-400"
+                  className="text-matt-green"
                 />
               </motion.div>
             </div>
@@ -141,7 +141,7 @@ export default function Home() {
                 animate={{ scale: [1.1, 1, 1.1], rotate: [0, 5, 0] }}
                 transition={{ repeat: Infinity }}
               >
-                <FontAwesomeIcon icon={faCode} className="text-blue-400" />
+                <FontAwesomeIcon icon={faCode} className="text-matt-green" />
               </motion.div>
             </div>
             <p className="font-thin">{t("GLOBAL.SKILLS.DEV")}</p>
@@ -173,7 +173,10 @@ export default function Home() {
                 animate={{ opacity: [1, 0.5, 1] }}
                 transition={{ repeat: Infinity, duration: 1.5, type: "tween" }}
               >
-                <FontAwesomeIcon icon={faTerminal} className="text-blue-400" />
+                <FontAwesomeIcon
+                  icon={faTerminal}
+                  className="text-matt-green"
+                />
               </motion.div>
             </div>
             <p className="font-thin">{t("GLOBAL.SKILLS.DEVOPS")}</p>

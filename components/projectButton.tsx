@@ -47,7 +47,7 @@ export default function ProjectButton({
           >
             <FontAwesomeIcon
               icon={faArrowUpRightFromSquare}
-              className="text-blue-400"
+              className="text-matt-green"
             />
           </motion.div>
         )}

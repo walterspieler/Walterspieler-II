@@ -75,7 +75,7 @@ const Layout: FC<{ children: ReactNode }> = ({ children }) => {
                 </span>
               </div>
               <motion.div className="md:ml-5">
-                <FontAwesomeIcon icon={faGlobe} className="text-blue-400" />
+                <FontAwesomeIcon icon={faGlobe} className="text-matt-green" />
               </motion.div>
             </motion.button>
           </div>

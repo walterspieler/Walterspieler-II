@@ -27,7 +27,7 @@ export default function Button({ text, link }: { text: string; link: string }) {
           <motion.div animate={{ rotate }}>
             <FontAwesomeIcon
               icon={faAnglesRight}
-              className="rotate-45 text-blue-400"
+              className="rotate-45 text-matt-green"
             />
           </motion.div>
         </motion.button>
