@@ -4,6 +4,7 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 
@@ -45,7 +46,15 @@ const Layout: FC<{ children: ReactNode }> = ({ children }) => {
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
       <header>
-        <div className="flex w-full">
+        <div className="flex w-full items-center">
+          <div className="ml-10">
+            <Image
+              src={"/images/Walterspieler_logo.png"}
+              alt="Matt"
+              width={45}
+              height={45}
+            />
+          </div>
           <Button text={t("GLOBAL.MENU.PROFILE")} link="/" />
           <Button text={t("GLOBAL.MENU.WORKS")} link="/works" />
           <div className="m-2 border-t font-bold md:m-5">
