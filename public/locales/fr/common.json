@@ -1,11 +1,14 @@
 {
-    "GLOBAL.INTRO": "Né en 1991 en France et basé à Paris, je suis un développeur fullstack expérimenté depuis 2013. Au fil des ans, j'ai acquis une solide expérience dans le développement de plusieurs plateformes et sites web pour des sociétés opérant dans divers secteurs, notamment la finance et l'immobilier. Toutefois, ces dernières années, j'ai élargi mes compétences en occupant le poste de CTO dans une célèbre agence web parisienne appelée Blacksmith. Au sein de cette entreprise, j'ai travaillé avec de grands acteurs du monde du jeu vidéo et de l'organisation de tournois d'esports. En tant que CTO, j'ai non seulement participé au développement de projets clés, mais j'ai également pris part à la prise de décisions technologiques et à la direction technique de l'entreprise.",
-    "GLOBAL.INTRO.P2": "Certains de mes derniers projets sont disponibles dans la",
-    "GLOBAL.INTRO.LINK": "section `Travaux`",
-    "GLOBAL.SKILLS.INTRO": "J'aime élaborer des solutions fonctionnelles pour des problèmes uniques. Voici quelques-unes des compétences que j'ai acquises au cours de ma carrière.",
-    "GLOBAL.SKILLS.UI": "Je m'efforce toujours de concevoir des expériences mémorables, à la fois esthétiques, fonctionnelles et intuitives. Qu'il s'agisse de sites web marketing/vitrine inspirants, de sites de e-commerce convaincants ou d'applications bénéfiques à ses utilisateurs.",
-    "GLOBAL.SKILLS.DEV": "Je crois que le développement web `fullstack` peut être plus diversifié et inspirant. Avec la mission de présenter les possibilités de la conception web, je suis à la recherche de nouvelles voies et de solutions en itérant à travers des expériences et réflexions.",
-    "GLOBAL.SKILLS.DEVOPS": "Je suis convaincu qu'un projet réussi est un projet déployé en fonction de ses besoins avec la bonne architecture et le bon dimensionnement.",
-    "GLOBAL.MENU.PROFILE": "Mon profil",
-    "GLOBAL.MENU.WORKS": "Mes Travaux"
+  "GLOBAL.INTRO": "Né en 1991 en France et basé à Paris, je suis un développeur fullstack expérimenté depuis 2013. Au fil des ans, j'ai acquis une solide expérience dans le développement de plusieurs plateformes et sites web pour des sociétés opérant dans divers secteurs, notamment la finance et l'immobilier. Toutefois, ces dernières années, j'ai élargi mes compétences en occupant le poste de CTO dans une célèbre agence web parisienne appelée Blacksmith. Au sein de cette entreprise, j'ai travaillé avec de grands acteurs du monde du jeu vidéo et de l'organisation de tournois d'esports. En tant que CTO, j'ai non seulement participé au développement de projets clés, mais j'ai également pris part à la prise de décisions technologiques et à la direction technique de l'entreprise.",
+  "GLOBAL.INTRO.P2": "Certains de mes derniers projets sont disponibles dans la",
+  "GLOBAL.INTRO.LINK": "section `Travaux`",
+  "GLOBAL.SKILLS.INTRO": "J'aime élaborer des solutions fonctionnelles pour des problèmes uniques. Voici quelques-unes des compétences que j'ai acquises au cours de ma carrière.",
+  "GLOBAL.SKILLS.UI": "Je m'efforce toujours de concevoir des expériences mémorables, à la fois esthétiques, fonctionnelles et intuitives. Qu'il s'agisse de sites web marketing/vitrine inspirants, de sites de e-commerce convaincants ou d'applications bénéfiques à ses utilisateurs.",
+  "GLOBAL.SKILLS.DEV": "Je crois que le développement web `fullstack` peut être plus diversifié et inspirant. Avec la mission de présenter les possibilités de la conception web, je suis à la recherche de nouvelles voies et de solutions en itérant à travers des expériences et réflexions.",
+  "GLOBAL.SKILLS.DEVOPS": "Je suis convaincu qu'un projet réussi est un projet déployé en fonction de ses besoins avec la bonne architecture et le bon dimensionnement.",
+  "GLOBAL.MENU.PROFILE": "Mon profil",
+  "GLOBAL.MENU.WORKS": "Mes Travaux",
+  "WORKS.TITLE": "Travaux d'un développeur Fullstack Senior | Matthieu Walterspieler",
+  "WORKS.INTRO": "J'aime créer des solutions fonctionnelles pour des problèmes uniques. Voici quelques-uns de mes derniers projets.",
+  "WORKS.NOTE": "Note : Cette liste ne peut pas être considérée comme exhaustive."
 }

@@ -1,11 +1,14 @@
 {
-    "GLOBAL.INTRO": "Born in 1991 in France and based in Paris, I am a fullstack developer since 2013. I have developed several platforms and websites mainly for financial and real estate companies. I also worked for famous video games developers and esports tournament organizers.",
-    "GLOBAL.INTRO.P2": "Some of my latest projects are available in the",
-    "GLOBAL.INTRO.LINK": "Works Section",
-    "GLOBAL.SKILLS.INTRO": "I love to craft functional solutions for unique problems. These are some skills I've picked up over my career.",
-    "GLOBAL.SKILLS.UI": "I always strive to design memorable experiences that are aesthetically appealing, functional and intuitive. Whether it's inspiring marketing websites, convincing e-commerce sites or apps that are beneficial to users.",
-    "GLOBAL.SKILLS.DEV": "I believe fullstack web development can be more diverse and inspiring. With a mission to present the possibilities of web design, I am pursuing new ways and solutions iterating through experiments and thoughts.",
-    "GLOBAL.SKILLS.DEVOPS": "I'm convinced that a successful project is a project deployed depending on its needs with the right architecture and sizing.",
-    "GLOBAL.MENU.PROFILE": "My profile",
-    "GLOBAL.MENU.WORKS": "My works"
+  "WORKS.TITLE": "Works from a Senior Fullstack Developer | Matthieu Walterspieler",
+  "WORKS.INTRO": "I enjoy developing functional solutions for unique problems. Here are some of the skills I have acquired during my career.",
+  "WORKS.NOTE": "Note: The list is not intended to be exhaustive.",
+  "GLOBAL.INTRO": "Born in 1991 in France and based in Paris, I am a fullstack developer since 2013. I have developed several platforms and websites mainly for financial and real estate companies. I also worked for famous video games developers and esports tournament organizers.",
+  "GLOBAL.INTRO.P2": "Some of my latest projects are available in the",
+  "GLOBAL.INTRO.LINK": "Works Section",
+  "GLOBAL.SKILLS.INTRO": "I love to craft functional solutions for unique problems. These are some skills I've picked up over my career.",
+  "GLOBAL.SKILLS.UI": "I always strive to design memorable experiences that are aesthetically appealing, functional and intuitive. Whether it's inspiring marketing websites, convincing e-commerce sites or apps that are beneficial to users.",
+  "GLOBAL.SKILLS.DEV": "I believe fullstack web development can be more diverse and inspiring. With a mission to present the possibilities of web design, I am pursuing new ways and solutions iterating through experiments and thoughts.",
+  "GLOBAL.SKILLS.DEVOPS": "I'm convinced that a successful project is a project deployed depending on its needs with the right architecture and sizing.",
+  "GLOBAL.MENU.PROFILE": "My profile",
+  "GLOBAL.MENU.WORKS": "My works"
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
