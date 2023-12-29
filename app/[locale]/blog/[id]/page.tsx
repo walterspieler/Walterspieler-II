@@ -8,7 +8,7 @@ export default async function Post({
 }) {
   const postData = await getPostData(id);
   return (
-    <article>
+    <article className="p-8">
       <h1 className="text-3xl">{postData.title}</h1>
       <div className="text-gray-500">
         <Date dateString={postData.date} />

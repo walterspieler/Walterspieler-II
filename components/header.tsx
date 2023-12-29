@@ -28,6 +28,7 @@ const Header: FC = () => {
         </div>
         <Button text={t("GLOBAL.MENU.PROFILE")} link="/" />
         <Button text={t("GLOBAL.MENU.WORKS")} link="/works" />
+        <Button text={t("GLOBAL.MENU.BLOG")} link="/blog" />
         <div className="m-2 border-t font-bold md:m-5">
           <motion.button
             initial={{ scale: 1, y: 0 }}

@@ -1,6 +1,7 @@
 ---
 title: "Inspiration #1 - Voyage en Black and white"
 date: "2023-12-22"
+chapo: "Découvrez une sélection d'œuvres captivantes alliant minimalisme visuel et richesse émotionnelle, de voyages interactifs à des réflexions historiques profondes. Plongez dans des univers uniques, où chaque image raconte une histoire puissante."
 ---
 
 Bienvenue dans notre série hebdomadaire d'inspiration, où je mets en lumière une sélection de sites et d'expériences uniques qui captivent l'imagination et stimulent la créativité. Cette semaine, nous nous plongeons dans un univers en noir et blanc, où le minimalisme visuel rencontre la profondeur narrative et la richesse émotionnelle. Chaque œuvre sélectionnée représente une fusion unique de l'art, du design et de la narration, créant des expériences immersives qui dépassent les frontières conventionnelles.

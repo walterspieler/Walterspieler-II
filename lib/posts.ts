@@ -7,28 +7,33 @@ import html from "remark-html";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
-export function getSortedPostsData() {
+export async function getSortedPostsData() {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData: { id: string; date?: string }[] = fileNames.map(
-    (fileName) => {
-      // Remove ".md" from file name to get id
-      const id = fileName.replace(/\.md$/, "");
+  const allPostsDataPromises = fileNames.map(async (fileName) => {
+    // Remove ".md" from file name to get id
+    const id = fileName.replace(/\.md$/, "");
 
-      // Read markdown file as string
-      const fullPath = path.join(postsDirectory, fileName);
-      const fileContents = fs.readFileSync(fullPath, "utf8");
+    // Read markdown file as string
+    const fullPath = path.join(postsDirectory, fileName);
+    const fileContents = fs.readFileSync(fullPath, "utf8");
 
-      // Use gray-matter to parse the post metadata section
-      const matterResult = matter(fileContents);
+    // Use gray-matter to parse the post metadata section
+    const matterResult = matter(fileContents);
 
-      // Combine the data with the id
-      return {
-        id,
-        ...matterResult.data,
-      };
-    }
-  );
+    // Combine the data with the id
+    return {
+      id,
+      title: matterResult.data.title,
+      date: matterResult.data.date,
+      chapo: matterResult.data.chapo,
+      ...matterResult.data,
+    };
+  });
+
+  // Await for all the promises to resolve
+  const allPostsData = await Promise.all(allPostsDataPromises);
+
   // Sort posts by date
   return allPostsData.sort((a, b) => {
     if ((a?.date || 0) < (b?.date || 0)) {

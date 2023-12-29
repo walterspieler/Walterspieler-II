@@ -34,7 +34,7 @@ img {
 
 .blog-content {
   p {
-    @apply mb-5 text-justify;
+    @apply mb-5 md:text-justify;
   }
   a {
     @apply text-matt-green;

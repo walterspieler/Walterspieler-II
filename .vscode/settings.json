@@ -1,11 +1,6 @@
 {
-    "conventionalCommits.scopes": [
-        "Global",
-        "Content",
-        "Misc",
-        "Resume"
-    ],
-    "yaml.schemas": {
-        "https://json.schemastore.org/github-workflow.json": "file:///Users/matthieuwalterspieler/Projects/walterspieler.com/.github/workflows/deploy.yml"
-    }
+  "conventionalCommits.scopes": ["Global", "Content", "Misc", "Resume", "Blog"],
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///Users/matthieuwalterspieler/Projects/walterspieler.com/.github/workflows/deploy.yml"
+  }
 }
