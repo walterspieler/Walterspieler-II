@@ -7,15 +7,16 @@ import html from "remark-html";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
-export async function getSortedPostsData(): Promise<Post[]> {
+export async function getSortedPostsData(locale = "fr"): Promise<Post[]> {
   // Get file names under /posts
-  const fileNames = fs.readdirSync(postsDirectory);
+  const blogPostsPath = `${postsDirectory}/${locale}/blog`;
+  const fileNames = fs.readdirSync(blogPostsPath);
   const allPostsDataPromises = fileNames.map(async (fileName) => {
     // Remove ".md" from file name to get id
     const id = fileName.replace(/\.md$/, "");
 
     // Read markdown file as string
-    const fullPath = path.join(postsDirectory, fileName);
+    const fullPath = path.join(blogPostsPath, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
 
     // Use gray-matter to parse the post metadata section
@@ -62,8 +63,8 @@ export type Post = {
   date: string;
 };
 
-export async function getPostData(id: string): Promise<Post> {
-  const fullPath = path.join(postsDirectory, `${id}.md`);
+export async function getPostData(id: string, locale = "fr"): Promise<Post> {
+  const fullPath = path.join(postsDirectory, `/${locale}/blog/${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
   // Use gray-matter to parse the post metadata section
@@ -83,4 +84,21 @@ export async function getPostData(id: string): Promise<Post> {
     date: matterResult.data.date,
     ...matterResult.data,
   };
+}
+
+export async function getIntro(locale: string): Promise<string> {
+  const fullPath = path.join(postsDirectory, `${locale}/home/intro.md`);
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+
+  // Use gray-matter to parse the post metadata section
+  const matterResult = matter(fileContents);
+
+  // Use remark to convert markdown into HTML string
+  const processedContent = await remark()
+    .use(html)
+    .process(matterResult.content);
+  const contentHtml = processedContent.toString();
+
+  // Combine the data with the id and contentHtml
+  return contentHtml;
 }

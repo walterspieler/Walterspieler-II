@@ -2,7 +2,7 @@
   "WORKS.TITLE": "Works from a Senior Fullstack Developer | Matthieu Walterspieler",
   "WORKS.INTRO": "I enjoy developing functional solutions for unique problems. Here are some of the skills I have acquired during my career.",
   "WORKS.NOTE": "Note: The list is not intended to be exhaustive.",
-  "GLOBAL.INTRO": "Born in 1991 in France and based in Paris, I am a fullstack developer since 2013. I have developed several platforms and websites mainly for financial and real estate companies. I also worked for famous video games developers and esports tournament organizers.",
+  "GLOBAL.INTRO": "Based in Paris and Lille (France), I am an experienced fullstack developer since 2013, specialized in finance and real estate. Currently an independent CTO, I am involved in the development and technical direction of major projects, preferably from scratch.",
   "GLOBAL.INTRO.P2": "Some of my latest projects are available in the",
   "GLOBAL.INTRO.LINK": "Works Section",
   "GLOBAL.SKILLS.INTRO": "I love to craft functional solutions for unique problems. These are some skills I've picked up over my career.",
@@ -11,5 +11,7 @@
   "GLOBAL.SKILLS.DEVOPS": "I'm convinced that a successful project is a project deployed depending on its needs with the right architecture and sizing.",
   "GLOBAL.MENU.PROFILE": "My profile",
   "GLOBAL.MENU.WORKS": "My works",
-  "GLOBAL.MENU.BLOG": "My blog"
+  "GLOBAL.MENU.BLOG": "My blog",
+  "GLOBAL.BLOG.TITLE": "My blog | Matthieu Walterspieler",
+  "GLOBAL.BLOG.DESCRIPTION": "Explore the fascinating world of development through my blog, where I share my sources of inspiration, reflections, as well as detailed comparisons and the latest news on JavaScript and TypeScript frameworks. A place of exchange and discovery for technology enthusiasts and those curious about modern web development."
 }

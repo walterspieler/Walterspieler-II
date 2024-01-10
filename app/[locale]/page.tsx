@@ -1,24 +1,25 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 
 import ExternalLink from "components/externalLink";
 import ProfilePictureSection from "components/sections/profilePictureSection";
 import Skills from "components/skills";
-import { getI18n } from "lib/locales/server";
+import SpanButton from "components/span-button";
+import { getCurrentLocale, getI18n } from "lib/locales/server";
+import { getIntro } from "lib/posts";
 
-/* <title>Senior Fullstack Developer | Matthieu Walterspieler</title>
-          <meta
-            name="title"
-            content=""
-          />
-          <meta name="description" content={t("GLOBAL.INTRO") || ""} />
-*/
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getI18n();
 
-export const metadata: Metadata = {
-  title: "Senior Fullstack Developer | Matthieu Walterspieler",
-};
+  return {
+    title: "Senior Fullstack Developer | Matthieu Walterspieler",
+    description: t("GLOBAL.INTRO"),
+  };
+}
 
 export default async function Home() {
   const t = await getI18n();
+  const locale = getCurrentLocale();
+  const intro = await getIntro(locale);
 
   return (
     <>
@@ -29,19 +30,15 @@ export default async function Home() {
             <span className="font-bold md:text-5xl">Matthieu</span> <br />
             <span className="z-10 font-black">WALTERSPIELER SALVI</span>
           </h1>
-          <p className="font-thin">{t("GLOBAL.INTRO")}</p>
+          <div
+            className="blog-content"
+            dangerouslySetInnerHTML={{ __html: intro as string }}
+          />
           <p className="mt-1 font-thin">
             <span className="mr-1">{t("GLOBAL.INTRO.P2")}</span>
-            {/* <motion.span whileHover={{ scale: 1.01, y: 2 }}>
-              <Link
-                href={{
-                  pathname: "/works",
-                }}
-                className="font-bold text-matt-orange underline underline-offset-4"
-              >
-                {t("GLOBAL.INTRO.LINK")}
-              </Link>
-              </motion.span> */}
+            <SpanButton href="/works">
+              <>{t("GLOBAL.INTRO.LINK")}</>
+            </SpanButton>
           </p>
           <div className="mt-5 flex flex-wrap items-center justify-start border-t">
             <ExternalLink

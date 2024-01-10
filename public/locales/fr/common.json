@@ -1,5 +1,5 @@
 {
-  "GLOBAL.INTRO": "Né en 1991 en France et basé à Paris, je suis un développeur fullstack expérimenté depuis 2013. Au fil des ans, j'ai acquis une solide expérience dans le développement de plusieurs plateformes et sites web pour des sociétés opérant dans divers secteurs, notamment la finance et l'immobilier. Toutefois, ces dernières années, j'ai élargi mes compétences en occupant le poste de CTO dans une célèbre agence web parisienne appelée Blacksmith. Au sein de cette entreprise, j'ai travaillé avec de grands acteurs du monde du jeu vidéo et de l'organisation de tournois d'esports. En tant que CTO, j'ai non seulement participé au développement de projets clés, mais j'ai également pris part à la prise de décisions technologiques et à la direction technique de l'entreprise.",
+  "GLOBAL.INTRO": "Basé à Paris et Lille, je suis un développeur fullstack expérimenté depuis 2013, spécialisé en finance et immobilier. Actuellement CTO indépendant je m'implique dans le développement et la direction technique de projets majeurs et de préférence From Scratch.",
   "GLOBAL.INTRO.P2": "Certains de mes derniers projets sont disponibles dans la",
   "GLOBAL.INTRO.LINK": "section `Travaux`",
   "GLOBAL.SKILLS.INTRO": "J'aime élaborer des solutions fonctionnelles pour des problèmes uniques. Voici quelques-unes des compétences que j'ai acquises au cours de ma carrière.",
@@ -11,5 +11,7 @@
   "WORKS.TITLE": "Travaux d'un développeur Fullstack Senior | Matthieu Walterspieler",
   "WORKS.INTRO": "J'aime créer des solutions fonctionnelles pour des problèmes uniques. Voici quelques-uns de mes derniers projets.",
   "WORKS.NOTE": "Note : Cette liste ne peut pas être considérée comme exhaustive.",
-  "GLOBAL.MENU.BLOG": "Le blog"
+  "GLOBAL.MENU.BLOG": "Le blog",
+  "GLOBAL.BLOG.TITLE": "Mon blog | Matthieu Walterspieler",
+  "GLOBAL.BLOG.DESCRIPTION": "Explorez le monde fascinant du développement à travers mon blog, où je partage mes sources d'inspiration, mes réflexions, ainsi que des comparatifs détaillés et les dernières nouvelles sur les frameworks JavaScript et TypeScript. Un lieu d'échange et de découverte pour les passionnés de technologie et les curieux du développement web moderne."
 }

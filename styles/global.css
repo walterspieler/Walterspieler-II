@@ -17,6 +17,7 @@ body {
 
 a {
   text-decoration: none;
+  @apply cursor-pointer;
 }
 
 a:hover {
@@ -34,7 +35,7 @@ img {
 
 .blog-content {
   p {
-    @apply mb-5 md:text-justify;
+    @apply mb-5 md:text-justify font-thin;
   }
   a {
     @apply text-matt-green;

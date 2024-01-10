@@ -1,10 +1,19 @@
-"use client";
+import { Metadata } from "next";
 
 import ProjectButton from "components/projectButton";
-import { useI18n } from "lib/locales/client";
+import { getI18n } from "lib/locales/server";
 
-export default function Works() {
-  const t = useI18n();
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getI18n();
+
+  return {
+    title: t("WORKS.TITLE"),
+    description: t("WORKS.INTRO"),
+  };
+}
+
+export default async function Works() {
+  const t = await getI18n();
   return (
     <>
       <div className="mb-20 mt-10 grid md:grid-cols-2">

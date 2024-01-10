@@ -1,0 +1,7 @@
+Né en 1991 en France et basé entre Paris et Lille, je suis un **développeur fullstack senior** et **CTO indépendant**, actif dans le domaine depuis 2013. Fort d'une expérience diversifiée dans le **développement de plateformes web et sites** pour des sociétés de secteurs variés tels que la finance et l'immobilier, j'ai récemment élargi mon expertise en tant que CTO chez Blacksmith, une agence web innovante basée à Paris. Là, j'ai collaboré étroitement avec des leaders dans le monde du jeu vidéo et des tournois esports. En tant que CTO, je me suis impliqué dans le développement de projets clés, la prise de décisions technologiques stratégiques, et la direction technique de l'entreprise.
+
+Ma passion pour la création et l'**accompagnement de MVP** (Minimum Viable Products) depuis leurs premiers pas est au cœur de mon métier. Je considère chaque produit comme vivant, et accorde une importance particulière au suivi et à la maintenance évolutive des projets. Avec une formation initiale en **design** et une passion indéfectible pour le **développement informatique**, je combine ces compétences pour apporter une valeur ajoutée unique à chaque projet et une **optimisation** des temps de création/développement.
+
+Si vous cherchez un expert pour donner vie à vos idées ou pour un partenariat technologique enrichissant, n'hésitez pas à me contacter par mail à [matthieu@walterspieler.com](mailto:matthieu@walterspieler.com).
+
+**Ensemble, transformons vos visions en réalités numériques innovantes.**

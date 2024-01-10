@@ -14,7 +14,7 @@ export default function Resume() {
     <div className="bg-gray-100 py-16 print:p-0">
       <div className="m-auto grid max-w-[1200px] grid-cols-5 gap-1 bg-white p-8 shadow-xl print:p-0 print:shadow-none">
         <motion.section className="relative mb-5 aspect-square h-[10rem] w-[10rem]">
-          <div className="relative top-5 left-5 h-full w-full bg-black"></div>
+          <div className="relative left-5 top-5 h-full w-full bg-black"></div>
           <Image
             src={"/images/matt_low.jpg"}
             alt="Matt"
@@ -155,28 +155,28 @@ export default function Resume() {
                 technique.
               </p>
               <div className="flex">
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Nestjs
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Redis
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Next.js
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   NodeJS
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Typescript
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   AWS
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   React Native
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Socket.IO
                 </div>
               </div>
@@ -205,25 +205,25 @@ export default function Resume() {
                 d'offrir une expérience utilisateur de qualité.
               </p>
               <div className="flex">
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Next.js
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Strapi
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Vercel
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Figma
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Typescript
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Node.js
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Azure
                 </div>
               </div>
@@ -250,19 +250,19 @@ export default function Resume() {
                 gestion efficace des contenus.
               </p>
               <div className="flex">
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Next.js
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Strapi
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Vercel
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Figma
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Typescript
                 </div>
               </div>
@@ -310,28 +310,28 @@ export default function Resume() {
                 </li>
               </ul>
               <div className="flex">
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Nestjs
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Google PUB/SUB MQTT
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Angular
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   NodeJS
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Typescript
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   MongoDB
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   GCP
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Kubernetes
                 </div>
               </div>
@@ -358,25 +358,25 @@ export default function Resume() {
                 Google Cloud Platform (GCP) en utilisant GKE.
               </p>
               <div className="flex">
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Express
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Sass
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   AngularJS
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   NodeJS
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Typescript
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   GCP
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Docker
                 </div>
               </div>
@@ -396,10 +396,10 @@ export default function Resume() {
                 (HTML5/CSS, JavaScript, PHP).
               </p>
               <div className="flex">
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Adobe Suite
                 </div>
-                <div className="mr-3 rounded-full border py-1 px-3 text-xs font-thin leading-5">
+                <div className="mr-3 rounded-full border px-3 py-1 text-xs font-thin leading-5">
                   Wordpress
                 </div>
               </div>
