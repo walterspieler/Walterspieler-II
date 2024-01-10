@@ -7,7 +7,7 @@ export default function Works() {
   const t = useI18n();
   return (
     <>
-      <div className="mb-20 mt-10 grid grid-cols-2">
+      <div className="mb-20 mt-10 grid md:grid-cols-2">
         <p className="mx-20 text-2xl font-bold">{t("WORKS.INTRO")}</p>
       </div>
       <div className="m-5 mb-0 grid gap-x-14">

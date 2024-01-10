@@ -17,8 +17,8 @@ const Header: FC = () => {
   const locale = useCurrentLocale();
   return (
     <header>
-      <div className="flex w-full items-center">
-        <div className="ml-10">
+      <div className="flex w-full flex-wrap items-center">
+        <div className="mx-10">
           <Image
             src={"/images/Walterspieler_logo.png"}
             alt="Matt"
@@ -57,7 +57,7 @@ const Header: FC = () => {
             >
               fr
             </span>
-            <motion.div className="md:ml-5">
+            <motion.div className="ml-2 md:ml-5">
               <FontAwesomeIcon icon={faGlobe} className="text-matt-green" />
             </motion.div>
           </motion.button>

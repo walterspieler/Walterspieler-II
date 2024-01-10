@@ -87,7 +87,7 @@ export default async function Home() {
         </section>
       </div>
       <div className="mx-5 lg:mx-24">
-        <div className="grid grid-cols-2">
+        <div className="grid md:grid-cols-2">
           <p className="mb-8 text-2xl font-bold">{t("GLOBAL.SKILLS.INTRO")}</p>
         </div>
         <Skills />
