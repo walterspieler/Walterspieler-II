@@ -7,7 +7,7 @@ import html from "remark-html";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
-export async function getSortedPostsData() {
+export async function getSortedPostsData(): Promise<Post[]> {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsDataPromises = fileNames.map(async (fileName) => {
@@ -54,7 +54,15 @@ export function getAllPostIds() {
   });
 }
 
-export async function getPostData(id: string) {
+export type Post = {
+  id: string;
+  contentHtml?: string;
+  title: string;
+  chapo?: string;
+  date: string;
+};
+
+export async function getPostData(id: string): Promise<Post> {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
