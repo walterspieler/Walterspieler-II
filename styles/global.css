@@ -46,4 +46,7 @@ img {
   hr {
     @apply my-10;
   }
+  iframe {
+    @apply mb-8 m-auto;
+  }
 }

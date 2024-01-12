@@ -72,8 +72,9 @@ export async function getPostData(id: string, locale = "fr"): Promise<Post> {
 
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
-    .use(html)
+    .use(html, { sanitize: false })
     .process(matterResult.content);
+
   const contentHtml = processedContent.toString();
 
   // Combine the data with the id and contentHtml
