@@ -4,6 +4,7 @@ metadata:
   name: Walterspieler-II
   annotations:
     github.com/project-slug: walterspieler/Walterspieler-II
+    backstage.io/techdocs-ref: dir:.
   links:
     - url: https://www.walterspieler.com
       title: Portfolio Walterspieler
