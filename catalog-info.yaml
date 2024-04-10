@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Walterspieler-II
+  annotations:
+    github.com/project-slug: walterspieler/Walterspieler-II
+  links:
+    - url: https://www.walterspieler.com
+      title: Portfolio Walterspieler
+      icon: ColorLens
+      type: protfolio
+spec:
+  type: other
+  lifecycle: unknown
+  owner: walterspieler
