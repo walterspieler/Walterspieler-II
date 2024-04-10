@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Walterspieler-II
+  annotations:
+    github.com/project-slug: walterspieler/Walterspieler-II
+spec:
+  type: other
+  lifecycle: unknown
+  owner: walterspieler
