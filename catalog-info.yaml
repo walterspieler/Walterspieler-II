@@ -12,6 +12,6 @@ metadata:
       icon: ColorLens
       type: protfolio
 spec:
-  type: other
+  type: website
   lifecycle: unknown
-  owner: walterspieler
+  owner: user:walterspieler
